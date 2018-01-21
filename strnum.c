@@ -1,17 +1,13 @@
 #include<stdio.h>
 int main()
 {
-    char v;
-    printf("Enter the number ");
-    scanf("%s",&v);
-    if(v>='0'&&v<='9')
-    {
-        printf("yes is numeric",v);
-        
-}
-else
+char ch;
+int flag=0;
+scanf("%c",&ch);
+for(int i=48;i<=57;i++)
 {
-    printf("no is not numeric",v);
-    return 0;
-}
-}
+	if(ch==i)
+	{ flag=1;
+		break;
+     return 0;
+	}}
