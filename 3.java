@@ -9,7 +9,7 @@ int v=0;
 Scanner sc=new Scanner(System.in);
 n=sc.nextInt();
 int a[]=new int[n];
-if(n>=1&&n<=1000)
+if(n>=1&&n<=500)
 {
 for(int i=0;i<n;i++)
 {
@@ -26,7 +26,7 @@ continue;
 }
 if(v==0)
 {
-System.out.println("-1");
+System.out.println("-4");
 }
 }
 }
