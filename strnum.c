@@ -1,5 +1,5 @@
 #include<stdio.h>
-void main()
+int main()
 {
     char v;
     printf("Enter the number ");
@@ -12,5 +12,6 @@ void main()
 else
 {
     printf("no is not numeric",v);
+    return 0;
 }
 }
