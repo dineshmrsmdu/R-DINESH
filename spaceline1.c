@@ -1,5 +1,5 @@
 #include<stdio.h>
-void main()
+int main()
 {
 int i,space;
 char str[20];
@@ -10,4 +10,5 @@ if(str[i]== ' ')
 space++;
 }
 printf("%d",space);
+  return 0;
 }
