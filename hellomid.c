@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<string.h>
-main()
+ void main()
 {
     char a[100];
     int i,l,n;
@@ -14,5 +14,4 @@ main()
         a[(l-1)/2]=n;
     }
     printf("%s",a);
-    return 0;
 }
