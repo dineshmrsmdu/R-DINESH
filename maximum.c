@@ -1,5 +1,5 @@
 #include <stdio.h>
-void main()
+int main()
 {
 int a,b[a],i,max;
 scanf("%d",&a);
@@ -12,4 +12,5 @@ if(max<b[i])
 max=b[i];
 }
 printf("%d",max);
+  return 0;
 }
