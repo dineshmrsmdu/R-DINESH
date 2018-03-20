@@ -1,32 +1,26 @@
-import java.util.Scanner;
-
-public class fstsingle {
-
-	public static void main(String[] args) 
+#include<stdio.h>
+int main()
 {
-			int a[] = new int[54];
-			int dup[] = new int[65];
-			int k=0; 
-			Scanner sc = new Scanner(System.in);
-		System.out.println("Enter how many numbers : ");
-		int n = sc.nextInt();
-		System.out.println("Enter number one by one : ");
-		for(int i=0;i<n;i++)
+	int a[100],i,n,c=0;
+	printf("Enter value of n");
+	scanf("%d",&n);
+	printf("Enter array");
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	for(i=0;i<n;i++)
+	{
+		if(i==a[i])
 		{
-			a[i] = sc.nextInt();
+			printf("%d",a[i]);
+			c=1;
 		}
-				for(int i=1;i<n;i++)
-			{
-				for(int j=0;j<n;j++)
-				{
-					if(a[i-1]==a[j+i])
-					{
-						dup[k] = a[i-1];
-						k++;
-				        	 }
-			   	 }
-			}
-				System.out.println("Firdt Duplicate value in array : ");
-				System.out.println(dup[1]);
-}
+	}
+	if(c==0){
+		printf("-1");
+	}
+	
+	return 0;
+
 }
